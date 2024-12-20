@@ -1,18 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // List of plugins (hardcoded in this case or you could fetch from an API)
+    // List of plugins (hardcoded for now)
     const plugins = [
         { 
             name: "Plugin 1", 
             file: "plugin1.jar", 
-            description: "This is a great plugin that adds features to your server.", 
-            image: "https://via.placeholder.com/250x150?text=Plugin+1" 
+            description: "Enhance your Minecraft server with awesome features!", 
+            image: "https://via.placeholder.com/280x150?text=Plugin+1" 
         },
         { 
             name: "Plugin 2", 
             file: "plugin2.jar", 
-            description: "A plugin that enhances server management and performance.", 
-            image: "https://via.placeholder.com/250x150?text=Plugin+2" 
+            description: "Manage your server more efficiently with this plugin.", 
+            image: "https://via.placeholder.com/280x150?text=Plugin+2" 
         },
+        { 
+            name: "Plugin 3", 
+            file: "plugin3.jar", 
+            description: "Improve server performance and add new commands.", 
+            image: "https://via.placeholder.com/280x150?text=Plugin+3" 
+        }
     ];
 
     // Function to populate plugin cards
@@ -21,22 +27,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const pluginDropdown = document.getElementById('plugin-dropdown');
 
         plugins.forEach(plugin => {
-            // Create card element
+            // Create a plugin card
             const card = document.createElement('div');
             card.classList.add('plugin-card');
-
-            // Add image, name, description, and button
+            
+            // Add content to the card
             card.innerHTML = `
                 <img src="${plugin.image}" alt="${plugin.name}">
                 <h3>${plugin.name}</h3>
                 <p>${plugin.description}</p>
-                <button class="download-btn" onclick="downloadPlugin('${plugin.file}')">Download</button>
+                <a href="/plugins/${plugin.file}" class="download-btn" download>Download</a>
             `;
 
-            // Append the card to the container
+            // Add the card to the container
             pluginCardsContainer.appendChild(card);
 
-            // Add option to the dropdown
+            // Add the plugin to the dropdown
             const option = document.createElement('option');
             option.value = plugin.file;
             option.textContent = plugin.name;
@@ -44,12 +50,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Function to handle downloading the selected plugin
-    window.downloadPlugin = function(fileName) {
-        const downloadUrl = `/plugins/${fileName}`;
-        window.location.href = downloadUrl;
+    // Function to handle the download button (uses the file selected from the dropdown)
+    function downloadPlugin() {
+        const pluginFile = document.getElementById('plugin-dropdown').value;
+        if (pluginFile) {
+            window.location.href = `/plugins/${pluginFile}`;
+        }
     }
 
-    // Populate the cards and dropdown on page load
+    // Run the function to populate the plugin cards
     populatePluginCards();
+
+    // Bind the download function to the button
+    window.downloadPlugin = downloadPlugin;
 });
