@@ -1,4 +1,23 @@
-/* Plugin Card Styling */
+/* Basic reset for padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
 .plugin-cards {
     display: flex;
     flex-wrap: wrap;
@@ -7,15 +26,14 @@
 }
 
 .plugin-card {
-    background-color: #fff;
+    background-color: white;
     border-radius: 10px;
     padding: 20px;
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 0 auto;
 }
 
 .plugin-card img {
@@ -29,7 +47,6 @@
 .plugin-card h3 {
     font-size: 1.4rem;
     margin-bottom: 10px;
-    color: #333;
 }
 
 .plugin-card p {
@@ -41,21 +58,16 @@
 .plugin-card .download-btn {
     background-color: #4CAF50;
     color: white;
-    padding: 12px 20px;
+    padding: 10px 20px;
     font-size: 1.1rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    width: 100%;
+    display: inline-block;
     transition: background-color 0.3s ease;
 }
 
 .plugin-card .download-btn:hover {
     background-color: #45a049;
-}
-
-.plugin-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
