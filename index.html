@@ -3,39 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Plugin Manager</title>
+    
+    <!-- Link Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Link Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Link to custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <h1>Plugin Manager</h1>
-            </div>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Plugin Manager</h1>
+            <p>The ultimate place to find and manage your Minecraft plugins.</p>
+            <a href="#plugins" class="btn-hero">Browse Plugins</a>
         </div>
     </header>
 
+    <!-- Main Content Section -->
     <main>
-        <section class="plugin-list">
-            <h2>Available Plugins</h2>
+        <!-- Available Plugins Section -->
+        <section class="plugin-list" id="plugins">
+            <h2>Featured Plugins</h2>
             <div class="plugin-cards">
-                <!-- Plugin cards will be dynamically added here -->
+                <!-- Plugin cards will be dynamically injected here -->
             </div>
         </section>
 
+        <!-- Download Plugin Section -->
         <section class="download-section">
             <h2>Download Plugin</h2>
             <div>
                 <select id="plugin-dropdown">
-                    <!-- Dropdown options will be dynamically added here -->
+                    <!-- Dropdown options will be dynamically injected here -->
                 </select>
-                <button onclick="downloadPlugin()">Download</button>
+                <button class="btn-download" onclick="downloadPlugin()">Download</button>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Plugin Manager. All rights reserved.</p>
+        <p>&copy; 2024 Plugin Manager. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
     </footer>
 
     <script src="assets/js/script.js"></script>
