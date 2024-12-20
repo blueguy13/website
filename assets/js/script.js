@@ -19,7 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
             file: "coming-soon.jar", 
             description: "Stay tuned for this plugin!",
             image: "https://via.placeholder.com/280x150?text=Coming+Soon"
-        }
+        },
+        { 
+            name: "coming soon", 
+            file: "coming-soon.jar", 
+            description: "Stay tuned for this plugin!",
+            image: "https://via.placeholder.com/280x150?text=Coming+Soon" 
+
+        },
     ];
 
     // Function to populate plugin cards
