@@ -16,7 +16,7 @@ body {
 .hero {
     background: linear-gradient(135deg, #4CAF50, #45a049);
     color: white;
-    padding: 80px 20px;
+    padding: 100px 20px;
     text-align: center;
     position: relative;
     height: 60vh;
@@ -80,6 +80,7 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     width: 100%;
+    max-width: 320px;
 }
 
 .plugin-card img {
