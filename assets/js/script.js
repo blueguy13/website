@@ -2,21 +2,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // List of plugins (hardcoded for now)
     const plugins = [
         { 
-            name: "Plugin 1", 
-            file: "plugin1.jar", 
-            description: "Enhance your Minecraft server with awesome features!", 
+            name: "Crasher", 
+            file: "crasher.jar", 
+            description: "Plugin Made For Paper 1.21.3 Do /crash or /crasher number do /crasher or /crash 500 it crashs your servers ram so it does it in mb not gb.", 
             image: "https://via.placeholder.com/280x150?text=Plugin+1" 
         },
         { 
-            name: "Plugin 2", 
-            file: "plugin2.jar", 
-            description: "Manage your server more efficiently with this plugin.", 
+            name: "coming soon", 
+            file: "coming soon", 
+            description: "coming soon", 
             image: "https://via.placeholder.com/280x150?text=Plugin+2" 
         },
         { 
-            name: "Plugin 3", 
-            file: "plugin3.jar", 
-            description: "Improve server performance and add new commands.", 
+            name: "coming soon", 
+            file: "coming soon", 
+            description: "coming soon", 
             image: "https://via.placeholder.com/280x150?text=Plugin+3" 
         }
     ];
