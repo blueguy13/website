@@ -4,17 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
         { 
             name: "Crasher", 
             file: "crasher.jar", 
-            description: "Made for Paper Java 21 (1.21.3). Commands: /crasher, /crash", 
+            description: "Made for Paper Java 21 (1.21.3). Commands: /crasher, /crash",
+            image: "https://via.placeholder.com/280x150?text=Crasher" 
+
         },
         { 
             name: "Coming Soon", 
             file: "coming-soon.jar", 
-            description: "Stay tuned for this plugin!", 
+            description: "Stay tuned for this plugin!",
+            image: "https://via.placeholder.com/280x150?text=Coming+Soon"
         },
         { 
             name: "Coming Soon", 
             file: "coming-soon.jar", 
-            description: "Stay tuned for this plugin!", 
+            description: "Stay tuned for this plugin!",
+            image: "https://via.placeholder.com/280x150?text=Coming+Soon"
         }
     ];
 
