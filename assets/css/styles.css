@@ -53,10 +53,10 @@ main {
     padding: 40px 20px;
 }
 
-/* Plugin List Section */
+/* Plugin List Section (Top of the Page) */
 .plugin-list {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 0; /* Make sure it starts immediately after the hero section */
 }
 
 .plugin-list h2 {
@@ -119,35 +119,6 @@ main {
 .plugin-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-/* Download Section */
-.download-section {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.download-section select {
-    padding: 12px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-right: 15px;
-}
-
-.download-section button {
-    padding: 12px 20px;
-    font-size: 1rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.download-section button:hover {
-    background-color: #45a049;
 }
 
 /* Footer */
