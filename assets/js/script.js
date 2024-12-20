@@ -451,11 +451,6 @@ document.addEventListener('DOMContentLoaded', () => {
             file: "coming-soon.jar", 
             description: "Stay tuned for this plugin!"
         },
-        { 
-            name: "Coming Soon", 
-            file: "coming-soon.jar", 
-            description: "Stay tuned for this plugin!"
-        },
     ];
 
     // Function to populate plugin cards
