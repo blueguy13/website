@@ -15,7 +15,6 @@ body {
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 2rem;
 }
 
 .plugin-cards {
@@ -34,14 +33,6 @@ h2 {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.plugin-card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    object-fit: cover;
-    height: 200px;
 }
 
 .plugin-card h3 {
