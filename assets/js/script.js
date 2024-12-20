@@ -4,19 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
         { 
             name: "Crasher", 
             file: "crasher.jar", 
-            description: "Plugin Made For Paper 1.21.3 Do /crash or /crasher number do /crasher or /crash 500 it crashs your servers ram so it does it in mb not gb.", 
+            description: "Plugin Made For Paper 1.21.3. Do /crash or /crasher number to crash your server's RAM. Example: /crasher 500 will crash your server in MB.", 
             image: "https://via.placeholder.com/280x150?text=Plugin+1" 
         },
         { 
-            name: "coming soon", 
-            file: "coming soon", 
-            description: "coming soon", 
+            name: "Coming Soon", 
+            file: "coming-soon.jar", 
+            description: "Stay tuned for this plugin!", 
             image: "https://via.placeholder.com/280x150?text=Plugin+2" 
         },
         { 
-            name: "coming soon", 
-            file: "coming soon", 
-            description: "coming soon", 
+            name: "Coming Soon", 
+            file: "coming-soon.jar", 
+            description: "Stay tuned for this plugin!", 
             image: "https://via.placeholder.com/280x150?text=Plugin+3" 
         }
     ];
@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to populate plugin cards
     function populatePluginCards() {
         const pluginCardsContainer = document.querySelector('.plugin-cards');
-        const pluginDropdown = document.getElementById('plugin-dropdown');
 
         plugins.forEach(plugin => {
             // Create a plugin card
@@ -41,26 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Add the card to the container
             pluginCardsContainer.appendChild(card);
-
-            // Add the plugin to the dropdown
-            const option = document.createElement('option');
-            option.value = plugin.file;
-            option.textContent = plugin.name;
-            pluginDropdown.appendChild(option);
         });
-    }
-
-    // Function to handle the download button (uses the file selected from the dropdown)
-    function downloadPlugin() {
-        const pluginFile = document.getElementById('plugin-dropdown').value;
-        if (pluginFile) {
-            window.location.href = `/plugins/${pluginFile}`;
-        }
     }
 
     // Run the function to populate the plugin cards
     populatePluginCards();
-
-    // Bind the download function to the button
-    window.downloadPlugin = downloadPlugin;
 });
