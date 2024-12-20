@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "Made for Paper Java 21 (1.21.3). Commands: /crasher, /crash"
         },
         { 
-            name: "Coming Soon", 
-            file: "coming-soon.jar", 
-            description: "Stay tuned for this plugin!"
+            name: "Commands", 
+            file: "Commands.jar", 
+            description: "This Plugin Is In Beta!!! for cmds do /help commands for Java 17 Paper 1.21.3"
         },
         { 
             name: "Coming Soon", 
