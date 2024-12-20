@@ -4,20 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
         { 
             name: "Crasher", 
             file: "crasher.jar", 
-            description: "Plugin Made For Paper 1.21.3. Do /crash or /crasher number to crash your server's RAM. Example: /crasher 500 will crash your server in MB.", 
-            image: "https://via.placeholder.com/280x150?text=Plugin+1" 
+            description: "Made for paper java 21 1.21.3 cmds /crasher /crash", 
+            image: "https://via.placeholder.com/280x150?text=Crasher" 
         },
         { 
             name: "Coming Soon", 
             file: "coming-soon.jar", 
             description: "Stay tuned for this plugin!", 
-            image: "https://via.placeholder.com/280x150?text=Plugin+2" 
+            image: "https://via.placeholder.com/280x150?text=coming+soon" 
         },
         { 
             name: "Coming Soon", 
             file: "coming-soon.jar", 
             description: "Stay tuned for this plugin!", 
-            image: "https://via.placeholder.com/280x150?text=Plugin+3" 
+            image: "https://via.placeholder.com/280x150?text=coming+soon" 
         }
     ];
 
