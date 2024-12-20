@@ -14,38 +14,20 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #4CAF50, #45a049);
+    background-color: #4CAF50;
     color: white;
-    padding: 100px 20px;
+    padding: 80px 20px;
     text-align: center;
-    position: relative;
-    height: 60vh;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
-}
-
-.btn-hero {
-    background-color: #ff6f61;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn-hero:hover {
-    background-color: #e65c50;
 }
 
 /* Main Content */
@@ -53,10 +35,11 @@ main {
     padding: 40px 20px;
 }
 
-/* Plugin List Section (Top of the Page) */
+/* Plugin List Section */
 .plugin-list {
+    width: 100%;
+    padding-top: 40px;
     text-align: center;
-    margin-top: 0; /* Make sure it starts immediately after the hero section */
 }
 
 .plugin-list h2 {
@@ -66,31 +49,34 @@ main {
 }
 
 .plugin-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-    justify-items: center;
 }
 
 .plugin-card {
-    background: white;
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
     width: 100%;
-    max-width: 320px;
+    max-width: 500px; /* Restrict max width */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
 }
 
 .plugin-card img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
+    object-fit: cover;
+    height: 200px;
 }
 
 .plugin-card h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 10px;
     color: #333;
 }
@@ -104,11 +90,13 @@ main {
 .plugin-card .download-btn {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
     border: none;
-    font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    width: 100%;
     transition: background-color 0.3s ease;
 }
 
@@ -132,14 +120,4 @@ footer {
 
 footer p {
     font-size: 0.9rem;
-}
-
-footer a {
-    color: #ff6f61;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
