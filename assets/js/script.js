@@ -4,26 +4,22 @@ document.addEventListener('DOMContentLoaded', () => {
         { 
             name: "Crasher", 
             file: "crasher.jar", 
-            description: "Made for Paper Java 21 (1.21.3). Commands: /crasher, /crash",
-            image: "https://via.placeholder.com/280x150?text=Crasher"
+            description: "Made for Paper Java 21 (1.21.3). Commands: /crasher, /crash"
         },
         { 
             name: "Coming Soon", 
             file: "coming-soon.jar", 
-            description: "Stay tuned for this plugin!",
-            image: "https://via.placeholder.com/280x150?text=Coming+Soon"
+            description: "Stay tuned for this plugin!"
         },
         { 
             name: "Coming Soon", 
             file: "coming-soon.jar", 
-            description: "Stay tuned for this plugin!",
-            image: "https://via.placeholder.com/280x150?text=Coming+Soon"
+            description: "Stay tuned for this plugin!"
         },
         { 
             name: "Coming Soon", 
             file: "coming-soon.jar", 
-            description: "Stay tuned for this plugin!",
-            image: "https://via.placeholder.com/280x150?text=Coming+Soon"
+            description: "Stay tuned for this plugin!"
         },
     ];
 
@@ -44,9 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.classList.add('plugin-card');
 
-            // Set the inner HTML of the card with plugin details
+            // Set the inner HTML of the card with plugin details (no image now)
             card.innerHTML = `
-                <img src="${plugin.image}" alt="${plugin.name}">
                 <h3>${plugin.name}</h3>
                 <p>${plugin.description}</p>
                 <a href="/plugins/${plugin.file}" class="download-btn" download>Download</a>
