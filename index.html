@@ -7,25 +7,36 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Plugin Manager</h1>
-
-        <!-- Plugin List -->
-        <h2>Available Plugins</h2>
-        <ul id="plugin-list">
-            <!-- Plugin items will be dynamically added here -->
-        </ul>
-
-        <!-- Download a Plugin -->
-        <h2>Download Plugin</h2>
-        <p>Select a plugin from the list to download:</p>
-        <div>
-            <select id="plugin-dropdown">
-                <!-- Dropdown options will be dynamically added here -->
-            </select>
-            <button onclick="downloadPlugin()">Download</button>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Plugin Manager</h1>
+            </div>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <section class="plugin-list">
+            <h2>Available Plugins</h2>
+            <div class="plugin-cards">
+                <!-- Plugin cards will be dynamically added here -->
+            </div>
+        </section>
+
+        <section class="download-section">
+            <h2>Download Plugin</h2>
+            <div>
+                <select id="plugin-dropdown">
+                    <!-- Dropdown options will be dynamically added here -->
+                </select>
+                <button onclick="downloadPlugin()">Download</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plugin Manager. All rights reserved.</p>
+    </footer>
 
     <script src="assets/js/script.js"></script>
 </body>
