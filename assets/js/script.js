@@ -4,27 +4,27 @@ document.addEventListener('DOMContentLoaded', () => {
         { 
             name: "Crasher", 
             file: "crasher.jar", 
-            description: "Made for paper java 21 1.21.3 cmds /crasher /crash", 
+            description: "Made for Paper Java 21 (1.21.3). Commands: /crasher, /crash", 
             image: "https://via.placeholder.com/280x150?text=Crasher" 
         },
         { 
             name: "Coming Soon", 
             file: "coming-soon.jar", 
             description: "Stay tuned for this plugin!", 
-            image: "https://via.placeholder.com/280x150?text=coming+soon" 
+            image: "https://via.placeholder.com/280x150?text=Coming+Soon" 
         },
         { 
             name: "Coming Soon", 
             file: "coming-soon.jar", 
             description: "Stay tuned for this plugin!", 
-            image: "https://via.placeholder.com/280x150?text=coming+soon" 
+            image: "https://via.placeholder.com/280x150?text=Coming+Soon" 
         }
     ];
 
     // Function to populate plugin cards
     function populatePluginCards() {
         const pluginCardsContainer = document.querySelector('.plugin-cards');
-
+        
         plugins.forEach(plugin => {
             // Create a plugin card
             const card = document.createElement('div');
